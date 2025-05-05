@@ -1,4 +1,4 @@
-# 🧠  Women's Bargaining Power and Its Impact on Children's Education Outcomes
+# 🧠 Maternal Bargaining Power and Intergenerational Education Mobility
 
 This paper studies the role of women’s bargaining power on children’s outcomes through the lens of intergenerational education correlations.
 
