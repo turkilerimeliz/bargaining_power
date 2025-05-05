@@ -46,7 +46,7 @@ rename *1 *
 gen w5_child_no=1
 
 // keep observations of family respondents ( only family respondents provide information for child)
-drop if w5_fam==0
+drop if w5_fam_resp==0
 
 // drop obs where families without child (but keep these children if main variables are not missing)
 *tab w5_wave if w5_ch001_==. & w5_ch005_!=.
@@ -73,7 +73,7 @@ rename *`i' *
 gen w5_child_no=`i'
 
 // keep observations of family respondents ( only family respondents provide information for child)
-drop if w5_fam==0
+drop if w5_fam_resp==0
 
 // drop obs where families do not report corresponding child (but keep these children if main variables are not missing)
 drop if w5_ch001_==.

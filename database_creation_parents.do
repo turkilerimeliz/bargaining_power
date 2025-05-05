@@ -118,7 +118,7 @@ ren *sp *sp5
 ren country country5
 ren language language5
 
-keep mergeid hhid5 mergeidp5 coupleid5 country5 language5 dn002_5 dn003_5 dn040_ dn041_5 dn042_5 isced1997_r5 isced1997_sp5 isced1997_m5 isced1997_f5 isced2011_r5 isced2011_sp5 isced2011_m5 isced2011_f5 mn101_5 dn004_5 dn005c_5 dn006_5 dn007_5 dn008c_5 dn014_5 dn015_5 dn016_5 dn017_5 dn018_5 dn019_5 dn020_5 dn042_5 dn044_5 dn504c_5 dn505c_5 ch001_5 ch508_5
+keep mergeid hhid5 mergeidp5 coupleid5 country5 language5 dn002_5 dn003_5 dn040_5 dn041_5 dn042_5 isced1997_r5 isced1997_sp5 isced1997_m5 isced1997_f5 isced2011_r5 isced2011_sp5 isced2011_m5 isced2011_f5 mn101_5 dn004_5 dn005c_5 dn006_5 dn007_5 dn008c_5 dn014_5 dn015_5 dn016_5 dn017_5 dn018_5 dn019_5 dn020_5 dn042_5 dn044_5 dn504c_5 dn505c_5 ch001_5 ch508_5
 
 save `parent5',replace
 

@@ -71,7 +71,7 @@ rename mainjob mother_mainjob_`i'
 rename industry mother_industry_`i'
 rename job_title mother_job_title_`i'
 rename working_hours mother_working_hours_`i'
-rename country_res mother_country_res_`i'
+rename country_res_ mother_country_res_`i'
 rename nchildren mother_nchildren_`i'
 rename _merge mother_merge_`i'
 
@@ -125,7 +125,7 @@ rename mainjob father_mainjob_`i'
 rename industry father_industry_`i'
 rename job_title father_job_title_`i'
 rename working_hours father_working_hours_`i'
-rename country_res father_country_res_`i'
+rename country_res_ father_country_res_`i'
 rename nchildren father_nchildren_`i'
 rename _merge father_merge_`i'
 
@@ -854,7 +854,7 @@ replace father_residence_never_changed=1 if father_country_res_6==father_country
 replace parent_residence_never_changed=1 if german==1
 replace use_wave="6-15" if german==1
 replace use_wave="6-15" if use_wave=="" & parent_never_matched==0 & mother_residence_never_changed==1 & father_residence_never_changed==1 & mother_country_res_6==father_country_res_6
-replace parent_residence_never_changed=1 if use_wave=="6-15" & parent_res==0
+replace parent_residence_never_changed=1 if use_wave=="6-15" & parent_residence_never_changed==0
 
 * define number of years we can observe parental income
 gen number_years=10 if use_wave=="6-15"

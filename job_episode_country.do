@@ -9,7 +9,7 @@ use `job_episode' ,replace
 ==============================================================================*/
 
 preserve
-keep if	country_res==40
+keep if	country_res_==40
 
 *define cpi adjusted net annual wage & log versions 
 gen euro_wage=wage if currency_new==1
@@ -168,7 +168,7 @@ restore
 ==============================================================================*/
 
 preserve
-keep if	country_res==56
+keep if	country_res_==56
 
 *define cpi adjusted net annual wage & log versions 
 gen euro_wage=wage if currency_new==1
@@ -351,7 +351,7 @@ restore
 ==============================================================================*/
 
 preserve
-keep if	country_res==208
+keep if	country_res_==208
 
 *define cpi adjusted net annual wage & log versions
 gen euro_wage=wage if currency_new==1
@@ -535,7 +535,7 @@ restore
 ==============================================================================*/
 
 preserve
-keep if	country_res==276 | country_res==278 | country_res==280
+keep if	country_res_==276 | country_res_==278 | country_res_==280
 
 *define cpi adjusted net annual wage & log versions
 gen euro_wage=wage if currency_new==1
@@ -734,7 +734,7 @@ restore
 ==============================================================================*/
 
 preserve
-keep if	country_res==250
+keep if	country_res_==250
 
 *define cpi adjusted net annual wage & log versions
 gen euro_wage=wage if currency_new==1
@@ -923,7 +923,7 @@ restore
 ==============================================================================*/
 
 preserve
-keep if	country_res==300
+keep if	country_res_==300
 
 *define cpi adjusted net annual wage & log versions
 gen euro_wage=wage if currency_new==1
@@ -1117,7 +1117,7 @@ restore
 ==============================================================================*/
 
 preserve
-keep if	country_res==372
+keep if	country_res_==372
 
 *define cpi adjusted net annual wage & log versions
 gen euro_wage=wage if currency_new==1
@@ -1308,7 +1308,7 @@ restore
                             8: ITALY
 ==============================================================================*/
 preserve
-keep if	country_res==380
+keep if	country_res_==380
 
 *define cpi adjusted net annual wage & log versions
 gen euro_wage=wage if currency_new==1
@@ -1501,7 +1501,7 @@ restore
                             9: LUXEMBOURG
 ==============================================================================*/
 preserve
-keep if	country_res==442
+keep if	country_res_==442
 
 *define cpi adjusted net annual wage & log versions
 gen euro_wage=wage if currency_new==1
@@ -1696,7 +1696,7 @@ restore
 ==============================================================================*/
 
 preserve
-keep if	country_res==528
+keep if	country_res_==528
 
 *define cpi adjusted net annual wage & log versions
 gen euro_wage=wage if currency_new==1
@@ -1885,7 +1885,7 @@ restore
 ==============================================================================*/
 
 preserve
-keep if	country_res==620
+keep if	country_res_==620
 
 *define cpi adjusted net annual wage & log versions
 gen euro_wage=wage if currency_new==1
@@ -2078,7 +2078,7 @@ restore
 ==============================================================================*/
 
 preserve
-keep if	country_res==724
+keep if	country_res_==724
 
 *define cpi adjusted net annual wage & log versions
 gen euro_wage=wage if currency_new==1
@@ -2272,7 +2272,7 @@ restore
 ==============================================================================*/
 
 preserve
-keep if	country_res==752
+keep if	country_res_==752
 
 *define cpi adjusted net annual wage & log versions
 gen euro_wage=wage if currency_new==1
@@ -2461,7 +2461,7 @@ restore
 ==============================================================================*/
 
 preserve
-keep if	country_res==756
+keep if	country_res_==756
 
 *define cpi adjusted net annual wage & log versions
 gen euro_wage=wage if currency_new==1

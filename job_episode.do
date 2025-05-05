@@ -161,75 +161,75 @@ drop if	currency_new==.
 
 *Use country and currency info to impute missing country of residence values 
 
-replace country_res=40 if country_res==. & currency_new==2 & country==11
-replace country_res=56 if country_res==. & currency_new==5 & country==23
-replace country_res=208 if country_res==. & currency_new==19 & country==18
-replace country_res=724 if country_res==. & currency_new==21 & country==15
-replace country_res=250 if country_res==. & currency_new==23 & country==17
-replace country_res=300 if country_res==. & currency_new==25 & country==19
-replace country_res=372 if country_res==. & currency_new==26 & country==30
-replace country_res=376 if country_res==. & currency_new==27 & country==25
-replace country_res=380 if country_res==. & currency_new==28 & country==16
-replace country_res=442 if country_res==. & currency_new==29 & country==31
-replace country_res=616 if country_res==. & currency_new==32 & country==29
-replace country_res=620 if country_res==. & currency_new==34 & country==33
-replace country_res=705 if country_res==. & currency_new==37 & country==34
-replace country_res=233 if country_res==. & currency_new==90 & country==35
-replace country_res=191 if country_res==. & currency_new==109 & country==47
-replace country_res=348 if country_res==. & currency_new==111 & country==32
-replace country_res=752 if country_res==. & currency_new==186 & country==13
-replace country_res=616 if country_res==. & currency_new==251 & country==29
-replace country_res=250 if country_res==. & currency_new==253 & country==17
-replace country_res=616 if country_res==. & currency_new==264 & country==29
-replace country_res=376 if country_res==. & currency_new==301 & country==25
-replace country_res=376 if country_res==. & currency_new==303 & country==25
-replace country_res=528 if country_res==. & currency_new==269 & country==14
-replace country_res=200 if country_res==. & currency_new==320 & country==28 & year<1993
-replace country_res=200 if country_res==. & currency_new==322 & country==28 & year<1993
-replace country_res=203 if country_res==. & currency_new==320 & country==28 & year>1993
-replace country_res=203 if country_res==. & currency_new==322 & country==28 & year>1993
-replace country_res=278 if country_res==. & currency_new==17 & country==12 & year<1990
-replace country_res=276 if country_res==. & currency_new==17 & country==12 & year>1990
-replace country_res=280 if country_res==. & currency_new==18 & country==12 & year<1990
-replace country_res=276 if country_res==. & currency_new==18 & country==12 & year>1990
-replace country_res=620 if country_res==. & currency_new==281 & country==33
+replace country_res_=40 if country_res_==. & currency_new==2 & country==11
+replace country_res_=56 if country_res_==. & currency_new==5 & country==23
+replace country_res_=208 if country_res_==. & currency_new==19 & country==18
+replace country_res_=724 if country_res_==. & currency_new==21 & country==15
+replace country_res_=250 if country_res_==. & currency_new==23 & country==17
+replace country_res_=300 if country_res_==. & currency_new==25 & country==19
+replace country_res_=372 if country_res_==. & currency_new==26 & country==30
+replace country_res_=376 if country_res_==. & currency_new==27 & country==25
+replace country_res_=380 if country_res_==. & currency_new==28 & country==16
+replace country_res_=442 if country_res_==. & currency_new==29 & country==31
+replace country_res_=616 if country_res_==. & currency_new==32 & country==29
+replace country_res_=620 if country_res_==. & currency_new==34 & country==33
+replace country_res_=705 if country_res_==. & currency_new==37 & country==34
+replace country_res_=233 if country_res_==. & currency_new==90 & country==35
+replace country_res_=191 if country_res_==. & currency_new==109 & country==47
+replace country_res_=348 if country_res_==. & currency_new==111 & country==32
+replace country_res_=752 if country_res_==. & currency_new==186 & country==13
+replace country_res_=616 if country_res_==. & currency_new==251 & country==29
+replace country_res_=250 if country_res_==. & currency_new==253 & country==17
+replace country_res_=616 if country_res_==. & currency_new==264 & country==29
+replace country_res_=376 if country_res_==. & currency_new==301 & country==25
+replace country_res_=376 if country_res_==. & currency_new==303 & country==25
+replace country_res_=528 if country_res_==. & currency_new==269 & country==14
+replace country_res_=200 if country_res_==. & currency_new==320 & country==28 & year<1993
+replace country_res_=200 if country_res_==. & currency_new==322 & country==28 & year<1993
+replace country_res_=203 if country_res_==. & currency_new==320 & country==28 & year>1993
+replace country_res_=203 if country_res_==. & currency_new==322 & country==28 & year>1993
+replace country_res_=278 if country_res_==. & currency_new==17 & country==12 & year<1990
+replace country_res_=276 if country_res_==. & currency_new==17 & country==12 & year>1990
+replace country_res_=280 if country_res_==. & currency_new==18 & country==12 & year<1990
+replace country_res_=276 if country_res_==. & currency_new==18 & country==12 & year>1990
+replace country_res_=620 if country_res_==. & currency_new==281 & country==33
 
 *Drop obs with missing country_res if currency does not match with national currency in the target countries. 
 
-drop if country_res==. & currency_new==7
-drop if country_res==. & currency_new==15
-drop if country_res==. & currency_new==22
-drop if country_res==. & currency_new==30
-drop if country_res==. & currency_new==35
-drop if country_res==. & currency_new==41
-drop if country_res==. & currency_new==113
-drop if country_res==. & currency_new==134
-drop if country_res==. & currency_new==139
-drop if country_res==. & currency_new==164
-drop if country_res==. & currency_new==176
-drop if country_res==. & currency_new==177
-drop if country_res==. & currency_new==210
-drop if country_res==. & currency_new==238
-drop if country_res==. & currency_new==241
+drop if country_res_==. & currency_new==7
+drop if country_res_==. & currency_new==15
+drop if country_res_==. & currency_new==22
+drop if country_res_==. & currency_new==30
+drop if country_res_==. & currency_new==35
+drop if country_res_==. & currency_new==41
+drop if country_res_==. & currency_new==113
+drop if country_res_==. & currency_new==134
+drop if country_res_==. & currency_new==139
+drop if country_res_==. & currency_new==164
+drop if country_res_==. & currency_new==176
+drop if country_res_==. & currency_new==177
+drop if country_res_==. & currency_new==210
+drop if country_res_==. & currency_new==238
+drop if country_res_==. & currency_new==241
 
 *use country and currency info to impute country of residence (only for obs with missing country of residence info and reports old currency unit of the related country.)
 
-tab country if country_res==. & currency_new==260
-replace country_res=56 if country_res==. & currency_new==260 & country==23
-tab country if country_res==. & currency_new==261
-replace country_res=56 if country_res==. & currency_new==261 & country==23
-tab country if country_res==. & currency_new==265
-tab country if country_res==. & currency_new==266
-replace country_res=40 if country_res==. & currency_new==266 & country==11
-tab country if country_res==. & currency_new==278
-replace country_res=233 if country_res==. & currency_new==278 & country==35
+tab country if country_res_==. & currency_new==260
+replace country_res_=56 if country_res_==. & currency_new==260 & country==23
+tab country if country_res_==. & currency_new==261
+replace country_res_=56 if country_res_==. & currency_new==261 & country==23
+tab country if country_res_==. & currency_new==265
+tab country if country_res_==. & currency_new==266
+replace country_res_=40 if country_res_==. & currency_new==266 & country==11
+tab country if country_res_==. & currency_new==278
+replace country_res_=233 if country_res_==. & currency_new==278 & country==35
 
-replace country_res=756 if country_res==. & currency_new==14 & country==20
-replace country_res=200 if country_res==. & currency_new==16 & country==28 & year<1993
-replace country_res=203 if country_res==. & currency_new==16 & country==28 & year>1993
+replace country_res_=756 if country_res_==. & currency_new==14 & country==20
+replace country_res_=200 if country_res_==. & currency_new==16 & country==28 & year<1993
+replace country_res_=203 if country_res_==. & currency_new==16 & country==28 & year>1993
 
-*drop obs with missing country_res
-drop if country_res==.
+*drop obs with missing country_res_
+drop if country_res_==.
 
 *----------------------Merge with CPI and Exchange rate-------------------------
 

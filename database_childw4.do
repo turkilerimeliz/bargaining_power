@@ -54,7 +54,7 @@ rename w4_isced1997_c1 w4_isced1997_c
 gen w4_child_no=1
  
 // keep observations of family respondents ( only family respondents provide information for child)
-drop if w4_fam==0
+drop if w4_fam_resp==0
 
 // drop obs where families without child (but keep these children if main variables are not missing)
 *drop if w4_ch001_==.
@@ -90,7 +90,7 @@ rename w4_isced1997_c`i' w4_isced1997_c
 gen w4_child_no=`i'
 
 // keep observations of family respondents ( only family respondents provide information for child)
-drop if w4_fam==0
+drop if w4_fam_resp==0
 
 // drop obs where families do not report corresponding child (but keep these children if main variables are not missing)
 drop if w4_ch001_==.

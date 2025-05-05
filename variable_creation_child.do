@@ -226,9 +226,9 @@ order w2_wave, before (w1_step_child)
 order w4_wave, before (w1_step_child)
 order w5_wave, before (w1_step_child)
 order w6_wave, before (w1_step_child)
-order w2_mn101, before (w1_step_child)
-order w4_mn101, before (w1_step_child)
-order w5_mn101, before (w1_step_child)
+order w2_mn101_, before (w1_step_child)
+order w4_mn101_, before (w1_step_child)
+order w5_mn101_, before (w1_step_child)
 order w6_mn101, before (w1_step_child)
 order w1_inconsistent_child_no, before (w1_step_child)
 order w2_inconsistent_child_no, before (w1_step_child)
@@ -350,11 +350,11 @@ rename  w6_siblings_no w6_number_of_children
 ==============================================================================*/
 
 // define questionnaire version for wave 1
-gen w1_mn101=0 if one_two==1
-replace w1_mn101=0 if one_two==3
-label values w1_mn101 mn101_
-order w1_mn101, before (w2_mn101)
-label variable w1_mn101 "Wave1: Questionnaire version"
+gen w1_mn101_=0 if one_two==1
+replace w1_mn101_=0 if one_two==3
+label values w1_mn101_ mn101_
+order w1_mn101_, before (w2_mn101_)
+label variable w1_mn101_ "Wave1: Questionnaire version"
 
 
 // fix the problem in wave info where observations available in 1&2&6 and 1&2&5
@@ -568,32 +568,32 @@ replace occupation_3=w5_occupation if y==1 & z!=1 & wave_info==28
 replace occupation_3=w1_occupation if y==1 & z!=1 & wave_info==29
 replace occupation_3=w2_occupation if y==1 & z!=1 & wave_info==30
 
-gen number_child_3=w5_number_of_child if y==1 & z!=1 & wave_info==2
-replace number_child_3=w1_number_of_child if y==1 & z!=1 & wave_info==4
-replace number_child_3=w1_number_of_child if y==1 & z!=1 & wave_info==5
-replace number_child_3=w5_number_of_child if y==1 & z!=1 & wave_info==6
-replace number_child_3=w2_number_of_child if y==1 & z!=1 & wave_info==8
-replace number_child_3=w2_number_of_child if y==1 & z!=1 & wave_info==9
-replace number_child_3=w5_number_of_child if y==1 & z!=1 & wave_info==10
-replace number_child_3=w4_number_of_child if y==1 & z!=1 & wave_info==12
-replace number_child_3=w4_number_of_child if y==1 & z!=1 & wave_info==13
-replace number_child_3=w5_number_of_child if y==1 & z!=1 & wave_info==14
-replace number_child_3=w2_number_of_child if y==1 & z!=1 & wave_info==15
-replace number_child_3=w4_number_of_child if y==1 & z!=1 & wave_info==16
-replace number_child_3=w4_number_of_child if y==1 & z!=1 & wave_info==17
-replace number_child_3=w5_number_of_child if y==1 & z!=1 & wave_info==18
-replace number_child_3=w1_number_of_child if y==1 & z!=1 & wave_info==19
-replace number_child_3=w4_number_of_child if y==1 & z!=1 & wave_info==20
-replace number_child_3=w4_number_of_child if y==1 & z!=1 & wave_info==21
-replace number_child_3=w5_number_of_child if y==1 & z!=1 & wave_info==22
-replace number_child_3=w2_number_of_child if y==1 & z!=1 & wave_info==23
-replace number_child_3=w4_number_of_child if y==1 & z!=1 & wave_info==24
-replace number_child_3=w4_number_of_child if y==1 & z!=1 & wave_info==25
-replace number_child_3=w5_number_of_child if y==1 & z!=1 & wave_info==26
-replace number_child_3=w2_number_of_child if y==1 & z!=1 & wave_info==27
-replace number_child_3=w5_number_of_child if y==1 & z!=1 & wave_info==28
-replace number_child_3=w1_number_of_child if y==1 & z!=1 & wave_info==29
-replace number_child_3=w2_number_of_child if y==1 & z!=1 & wave_info==30
+gen number_child_3=w5_number_of_children if y==1 & z!=1 & wave_info==2
+replace number_child_3=w1_number_of_children if y==1 & z!=1 & wave_info==4
+replace number_child_3=w1_number_of_children if y==1 & z!=1 & wave_info==5
+replace number_child_3=w5_number_of_children if y==1 & z!=1 & wave_info==6
+replace number_child_3=w2_number_of_children if y==1 & z!=1 & wave_info==8
+replace number_child_3=w2_number_of_children if y==1 & z!=1 & wave_info==9
+replace number_child_3=w5_number_of_children if y==1 & z!=1 & wave_info==10
+replace number_child_3=w4_number_of_children if y==1 & z!=1 & wave_info==12
+replace number_child_3=w4_number_of_children if y==1 & z!=1 & wave_info==13
+replace number_child_3=w5_number_of_children if y==1 & z!=1 & wave_info==14
+replace number_child_3=w2_number_of_children if y==1 & z!=1 & wave_info==15
+replace number_child_3=w4_number_of_children if y==1 & z!=1 & wave_info==16
+replace number_child_3=w4_number_of_children if y==1 & z!=1 & wave_info==17
+replace number_child_3=w5_number_of_children if y==1 & z!=1 & wave_info==18
+replace number_child_3=w1_number_of_children if y==1 & z!=1 & wave_info==19
+replace number_child_3=w4_number_of_children if y==1 & z!=1 & wave_info==20
+replace number_child_3=w4_number_of_children if y==1 & z!=1 & wave_info==21
+replace number_child_3=w5_number_of_children if y==1 & z!=1 & wave_info==22
+replace number_child_3=w2_number_of_children if y==1 & z!=1 & wave_info==23
+replace number_child_3=w4_number_of_children if y==1 & z!=1 & wave_info==24
+replace number_child_3=w4_number_of_children if y==1 & z!=1 & wave_info==25
+replace number_child_3=w5_number_of_children if y==1 & z!=1 & wave_info==26
+replace number_child_3=w2_number_of_children if y==1 & z!=1 & wave_info==27
+replace number_child_3=w5_number_of_children if y==1 & z!=1 & wave_info==28
+replace number_child_3=w1_number_of_children if y==1 & z!=1 & wave_info==29
+replace number_child_3=w2_number_of_children if y==1 & z!=1 & wave_info==30
 
 gen move_out_3=w5_move_out if y==1 & z!=1 & wave_info==2
 replace move_out_3=w1_move_out if y==1 & z!=1 & wave_info==4

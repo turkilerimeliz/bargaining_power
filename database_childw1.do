@@ -81,7 +81,7 @@ keep mergeid w1_hhid w1_mergeidp w1_coupleid country language w1_ch001_ w1_ch002
  gen child_no=1
 
 // keep observations of family respondents ( only family respondents provide information for child)
-drop if w1_fam==0
+drop if w1_fam_resp==0
  *tab w1_wave if w1_ch001_==0 & w1_ch_gender!=.
  *tab w1_wave if w1_ch001_==0 & w1_ch_gender==.
  
@@ -113,7 +113,7 @@ rename w1_ch2_year w1_ch_year
 // define child number for corresponding child
 gen child_no=2
 // keep observations of family respondents ( only family respondents provide information for child)
-drop if w1_fam==0
+drop if w1_fam_resp==0
  *tab w1_wave if w1_ch001_<2 & w1_ch_gender!=. 
  
 // drop obs where families do not report second child (but keep these children if main variables are not missing)
@@ -121,7 +121,7 @@ gen inconsisten_child_number=1 if w1_ch001_<2 & w1_ch_gender!=.
 drop if w1_ch001_<2 & w1_ch_gender==.
  *tab w1_wave if w1_ch001_==.
  *tab w1_wave if w1_ch001_==. & w1_ch_gender==. 
-drop if w1_ch001==.
+drop if w1_ch001_==.
 
 // save
 save `w1_child2', replace
@@ -145,7 +145,7 @@ rename w1_ch3_year w1_ch_year
 // define child number for corresponding child
 gen child_no=3
 // keep observations of family respondents ( only family respondents provide information for child)
-drop if w1_fam==0
+drop if w1_fam_resp==0
 drop if w1_ch001_==.
 *tab w1_wave if w1_ch001_<3 & w1_ch_gender!=. 
 // drop obs where families do not report third child (but keep these children if main variables are not missing)
@@ -177,7 +177,7 @@ rename w1_ch4_year w1_ch_year
 gen child_no=4
 
 // keep observations of family respondents ( only family respondents provide information for child)
-drop if w1_fam==0
+drop if w1_fam_resp==0
 drop if w1_ch001_==.
 *tab w1_wave if w1_ch001_<4 & w1_ch_gender!=. (23 observations)
 

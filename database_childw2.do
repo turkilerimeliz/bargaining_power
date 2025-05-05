@@ -82,7 +82,7 @@ rename w2_ch1_gender w2_ch_gender
 rename w2_ch1_year w2_ch_year
  
 // keep observations of family respondents ( only family respondents provide information for child)
-drop if w2_fam==0
+drop if w2_fam_resp==0
  *tab w2_wave if w2_ch001_==0 & w2_ch_gender!=.
  *tab w2_wave if w2_ch001_==0 & w2_ch_gender==.
  *tab w2_wave if w2_ch001_==. & w2_ch_gender!=.
@@ -116,7 +116,7 @@ rename w2_ch2_gender w2_ch_gender
 rename w2_ch2_year w2_ch_year
 
 // keep observations of family respondents ( only family respondents provide information for child)
-drop if w2_fam==0
+drop if w2_fam_resp==0
 
 // drop obs where families do not report second child (but keep these children if main variables are not missing)
 drop if w2_ch001_==.
@@ -147,7 +147,7 @@ rename w2_ch3_gender w2_ch_gender
 rename w2_ch3_year w2_ch_year
 
 // keep observations of family respondents ( only family respondents provide information for child)
-drop if w2_fam==0
+drop if w2_fam_resp==0
 drop if w2_ch001_==.
  *tab w2_wave if w2_ch001_<3 & w2_ch_gender!=.
  
@@ -180,7 +180,7 @@ rename w2_ch4_gender w2_ch_gender
 rename w2_ch4_year w2_ch_year
 
 // keep observations of family respondents ( only family respondents provide information for child)
-drop if w2_fam==0
+drop if w2_fam_resp==0
 
 // drop obs where families do not report fourth child (but keep these children if main variables are not missing)
 drop if w2_ch001_==.
