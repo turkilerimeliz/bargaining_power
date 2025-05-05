@@ -130,6 +130,7 @@ The following datasets will be provided upon request. See *Appendix B* and the *
 - `Country_population.dta` – Population data used to construct weights  
 
 ## 📜 Citation
+For more detailed information, please refer to the full paper or contact the authors:
 - Aydemir, Abdurrahman B., and Meliz Tyurkileri. 2024. Maternal Bargaining Power and Intergenerational Education Mobility [unpublished manuscript].
   
-For more detailed information, please refer to the full paper or contact the authors.
+
