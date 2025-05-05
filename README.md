@@ -131,6 +131,6 @@ The following datasets will be provided upon request. See *Appendix B* and the *
 
 ## 📜 Citation
 For more detailed information, please refer to the full paper or contact the authors:
-- Aydemir, Abdurrahman B., and Meliz Tyurkileri. 2024. Maternal Bargaining Power and Intergenerational Education Mobility [unpublished manuscript].
+- Aydemir, Abdurrahman B., and Meliz Tyurkileri. 2024. _Maternal Bargaining Power and Intergenerational Education Mobility_. [unpublished manuscript].
   
 
