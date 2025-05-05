@@ -44,7 +44,7 @@ This paper studies the role of women’s bargaining power on children’s outcom
 ### 1. SHARE Datasets (Release 7.1.0)
 
 Access to the following datasets can be requested from: [https://share-eric.eu](https://share-eric.eu)
-- **Aknowledgements:** This study uses data from SHARE Waves 1, 2, 3, 4, 5, 6, 7 and the generated Job Episodes Panel (DOIs:10.6103/SHARE.w1.710, 10.6103/SHARE.w2.710, 10.6103/SHARE.w3.710, 10.6103/SHARE.w4.710, 10.6103/SHARE.w5.710, 10.6103/SHARE.w6.710, 10.6103/SHARE.w7.710, 10.6103/SHARE.jep.710), see Börsch-Supan et al. (2013) and Brugiavini et al. (2019) for methodological details. 
+**Aknowledgements:** This study uses data from SHARE Waves 1, 2, 3, 4, 5, 6, 7 and the generated Job Episodes Panel (DOIs:10.6103/SHARE.w1.710, 10.6103/SHARE.w2.710, 10.6103/SHARE.w3.710, 10.6103/SHARE.w4.710, 10.6103/SHARE.w5.710, 10.6103/SHARE.w6.710, 10.6103/SHARE.w7.710, 10.6103/SHARE.jep.710), see Börsch-Supan et al. (2013) and Brugiavini et al. (2019) for methodological details. 
 
 <details>
 <summary><strong>Wave 1</strong></summary>
