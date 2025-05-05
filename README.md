@@ -13,7 +13,7 @@ This paper studies the role of women’s bargaining power on children’s outcom
 
 ---
 
-## 📚 Dataset and Methodology
+## 🛠️ Dataset and Methodology
 
 - **Data:** The analysis is based on micro-level data spanning 20 European countries and Israel, incorporating information about family dynamics, parental education levels, and children's outcomes.   
   - Survey of Health, Ageing and Retirement in Europe (SHARE) - Waves 1 to 7   
